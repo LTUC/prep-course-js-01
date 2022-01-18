@@ -1,0 +1,21 @@
+#mainHeading {
+    background-color: aqua;
+    color: white;
+    border-style: dotted;
+    border-color: black;
+    width: 400px;
+    margin-left: 100px;
+    padding-left:50%;
+    padding: 100px;
+
+}
+.par {
+    border-color: black;
+    border-width: 10px;
+    border-style: solid;
+}
+
+body {
+    background-color: rgb(149, 149, 229);
+    margin: 15%;
+}
