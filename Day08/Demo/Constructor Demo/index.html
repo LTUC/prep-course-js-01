@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div id="headerParent">
+            <!-- Add a h1 and a nav bar inside here -->
+
+        </div>
+    </header>
+
+    <main id="main">
+        <button id="btn">Click me!</button>
+        <button id="btn2"> Surprise</button>
+        <form id="from">
+            <label for="drinkName">Drink Name; </label>
+            <input id="drinkName" type="text" name="drinkName" required>
+            <br>
+            <label for="ingredients">Ingredients: </label>
+            <input id="ingredients" type="text" 
+            placeholder="Add sperated by comma" name="ingredients">
+            <br>
+            <label for="images">images: </label>
+            <input id="images" type="text" name="images">
+            <br>
+
+            <input type="checkbox" id="isCold" name="isCold" value="cold">
+            <label for="isCold"> Cold </label><br>
+            <input type="checkbox" id="isHot" name="isHot" value="hot">
+            <label for="isHot"> Hot </label><br>
+            <input type="submit" value="Add a drink">
+            <!-- <button  type="submit">Add A drink</button> -->
+
+            <div id="drinks"></div>
+
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+    <script>
+    // console.log("Hello");
+    </script>
+
+    <script src="app.js"></script>
+    <script src="dom_example.js"></script>
+</body>
+
+</html>
