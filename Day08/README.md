@@ -1,23 +1,17 @@
-# Day 08
+# Day 09
 
 ## Outcomes
 
 Students will learn :
+- Be able to read from/write to local storage with multiple keys in different pages.
+- Demonstrate knowledge and command of JSON syntax and structure.
+- Be able to dynamically build an HTML table with JavaScript and render it to the DOM.
 
-- Understand how the browser represents an HTML document as an object that can be manipulated with JavaScript and use JavaScript to dynamically render data t in the DOM.
-- Be able to add an input form to an HTML document with properly structured HTML including the necessary `<form>`, `<input>`, `<fieldset>`,and `<label>` tags.
-- Understand how to use JavaScript events with the `.addEventListener()` method on a DOM element using either a named or anonymous event handler function.
-- Be able to add a new card to their home page storing, computing, and rendering data from the HTML form.
-
-## Rescources
-* [DOM Manipulation](https://www.geeksforgeeks.org/dom-document-object-model/)
-* [JavaScript Events](https://www.javatpoint.com/javascript-events)
+## Resources
+* [How to use localstorage](https://www.section.io/engineering-education/how-to-use-localstorage-with-javascript/)
+* [JSON (JavaScript Object Notation)](https://www.w3schools.com/js/js_json_intro.asp)
 
 ### Keywords to Search for: 
-* Document Object Model
-* DOM Methods
-* DOM Document
-* DOM Elements
-* Events in JavaScript
-* Event index
-* Event Listener
+* local storage.
+* JSON.
+* DOM manipulation.
