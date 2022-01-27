@@ -1,0 +1,249 @@
+{
+    "cells": [
+        {
+            "language": "markdown",
+            "source": [
+                "# Regular Expressions : "
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "## Uses of RegEx:\n* Validate strings against certain rules.\n* Find substring within a string\n* Replace part of the string"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "let string = \"Java is 2 JavaScript what Car is to Carpet\";\nconsole.log(string);"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "Java is 2 JavaScript what Car is to Carpet",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "let regex = /What/i;\nlet result = regex.test(string)\nconsole.log(result);"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "true",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "let example = \"The End\";\nlet regex = /^the end$/i;\n\nlet result = regex.test(example);\nconsole.log(result);\nif(result) {\n    console.log(\"It has the end\")\n} else {\n    console.log(\"not there\")\n}"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "true",
+                                "It has the end",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "javascript",
+            "source": [
+                ""
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "1. Example: Find **Java** in a string"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "let regex = /java/ig;\nlet result = string.match(regex);\nconsole.log(result);"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "[ 'Java', 'Java' ]",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "let regex = /[0-9]/g;\nlet result = string.match(regex);\nconsole.log(result);"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "[ '2' ]",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "let names = \"Neveen Leen Amer Osama Zaher\"\nlet regex = /[a-t]/g;\nlet result = names.match(regex);\nconsole.log(result);"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "[",
+                                "  'e', 'e', 'e', 'n', 'e',",
+                                "  'e', 'n', 'm', 'e', 'r',",
+                                "  's', 'a', 'm', 'a', 'a',",
+                                "  'h', 'e', 'r'",
+                                "]",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "let names = \"Neveen Leen Amer Osama Zaher\"\nlet regex = /[A-Z]/g;\nlet result = names.match(regex);\nconsole.log(result);"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "[ 'N', 'L', 'A', 'O', 'Z' ]",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "let names = \"Neveen Leen Amer Osama Zaher\"\nlet regex = /\\b[N](\\w)+/g;\nlet result = names.match(regex);\nconsole.log(result);"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "[ 'Neveen' ]",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "2. Find substing within a string:"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "3. Replacing"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "let string = \"Javascript is the duct tape of the Internet\";"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "let regex = /(\\W)/g;\nlet result = string.replace(regex, \"--\");\nconsole.log(result);"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "Javascript--is--the--duct--tape--of--the--Internet",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "let arr = [1,2,3,5];  // [6, 7, 8, 10]\nlet result = [];\narr.forEach(item =>{\n    // console.log(item);\n    result.push(item+5);\n\n})\nconsole.log(result);\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "[ 6, 7, 8, 10 ]",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
