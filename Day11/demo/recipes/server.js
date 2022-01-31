@@ -26,13 +26,7 @@ function helloWorldHandler(req, res){
 
 function recipesHandler(req, res){
     let recipes = [];
-    for (i=0; i < data.data.length; i++){
-        console.log(jsonData.data[i]);
-    }
-
-    let x = jsonData.data.map( (value,index) => {
-        return value;
-    })
+    
     jsonData.data.map(value => {
         let oneRecipe = new Recipe(value.title, value.readyInMinutes, value.summary, value.vegetarian, value.instructions, value.sourceUrl, value.image, value.id);
         recipes.push(oneRecipe);
