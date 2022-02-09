@@ -8,6 +8,8 @@
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="author" content="Boshra Jaber">
     <link rel="shortcut icon" href="image/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Javascript Review</title>
 </head>
 <body>
@@ -19,9 +21,16 @@
         <button id="btn">Show Date</button>
         <p id="date"></p>
     <!-- Another example of event listeners -->
-    <button onclick="alert('Hello there')"> CLick Here!</button>
+    <button onclick="Swal.fire(
+        'Good job!',
+        'You clicked the button!',
+        'success'
+      )"> CLick Here!</button>
+
+      <button> <a href="/about.html">Go to About</a> </button>
     </main>
     <footer></footer>
-    <script src="app.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
